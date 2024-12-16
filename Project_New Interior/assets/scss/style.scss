@@ -1,0 +1,215 @@
+@import "variables";
+@import "mixins";
+@import "globalStylings";
+
+
+
+header{
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    height: 100vh;
+    color: $white;
+
+    nav{
+        font-family: nixie, sans-serif;
+        font-size: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5vh 3vw;
+        margin-bottom: 25vh;
+    }
+
+    article{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.4vh;
+
+        h3{
+            font-family: nixie;
+            font-size: 5rem;
+            font-weight: 300;
+        }
+    
+        h1{
+            font-family: alegreya;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+    }
+}
+
+// * section 1: portfolio           
+
+
+.portfolio{
+    @include layout1_3;
+
+    .p-head{
+
+        div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .btns{
+            @include btn1;
+        }
+    }
+
+    .galery{
+        display: grid;
+        grid-template-areas:
+        "one two three"
+        "four five six";
+        gap: 4vh 1vw;
+        margin-bottom: 9vh;
+
+        .img1{
+            grid-area: one;
+        }
+        .img2{
+            grid-area: two;
+        }
+        .img3{
+            grid-area: three;
+        }
+        .img4{
+            grid-area: four;
+        }
+        .img5{
+            grid-area: five;
+        }
+        .img6{
+            grid-area: six;
+        }
+        
+        img{
+            transition: 0.2s;
+            overflow: hidden;
+            object-fit: cover;
+            height: 100%;
+            &:hover{
+                transform: scale(1.1);
+                opacity: 70%;
+            }
+        }
+    }
+}
+    
+
+// *section 2: services             
+
+.services{
+
+    background-image: url("../img/sec2_main.png");
+    background-size: cover;
+    background-attachment:fixed;
+    
+    .trans{
+        @include layout2_4_6;
+        margin: $global-margin;
+
+        .s-head{
+            text-align: center;
+            
+            h4{
+                font-family: alegreya;
+                font-size: 3.2rem;
+                margin-bottom: 1vh;
+                padding-top: 4vh;
+            }
+        }
+        .service{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2vw;
+    
+            .s-1,.s-2,.s-3{
+                display: flex;
+                flex-direction: column;
+                gap: 2vh;
+                align-items: center;
+                justify-content: center;
+                width: 20vw;
+                text-align: center;
+                h5{
+                    font-family: alegreya;
+                    font-size: 2.6rem;
+                }
+            }
+            
+            img{
+                max-height: 6vh;
+                object-fit: cover;
+            }
+        }
+        }
+    }
+    p{
+            font-family: poppins;
+            font-size: 1.2rem;
+            margin-bottom: 7vh;
+}
+
+
+// * section 3: blog                
+
+.blog{
+    @include layout1_3;
+
+    .b-head{
+        display: flex;
+        flex-direction: column;
+
+        .b-head-1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .btns{
+                @include btn1;
+            }
+        }
+    }
+    .b-container{
+        display: flex;
+        gap: 2vw;
+    }
+}
+
+// * section 4: parallax
+
+.para{
+    @include layout2_4_6;
+    background-image: url("../img/sec4.png");
+    background-attachment: fixed;
+    background-size: cover;
+    
+
+    article {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: $global-margin;
+        padding: 12vh;
+
+        h5{
+            font-family: alegreya;
+            font-size: 2rem;
+    }
+
+        a{
+            @include btn2;
+
+        }
+    }
+
+}

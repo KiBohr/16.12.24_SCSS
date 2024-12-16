@@ -1,0 +1,41 @@
+// *fonts       
+@font-face {
+    font-family: alegreya;
+    src: url(../fonts/AlegreyaSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: nixie;
+    src: url(../fonts/NixieOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+// * global
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+main{
+    background-color: $-lightbeige;
+}
+
+
+

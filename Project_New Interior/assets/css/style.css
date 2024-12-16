@@ -1,0 +1,272 @@
+@font-face {
+  font-family: alegreya;
+  src: url(../fonts/AlegreyaSC-Regular.ttf);
+}
+@font-face {
+  font-family: nixie;
+  src: url(../fonts/NixieOne-Regular.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  background-color: #F1F0F0;
+}
+
+header {
+  background-image: url("../img/hero.png");
+  background-size: cover;
+  height: 100vh;
+  color: #ffffff;
+}
+header nav {
+  font-family: nixie, sans-serif;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5vh 3vw;
+  margin-bottom: 25vh;
+}
+header article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4vh;
+}
+header article h3 {
+  font-family: nixie;
+  font-size: 5rem;
+  font-weight: 300;
+}
+header article h1 {
+  font-family: alegreya;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.portfolio {
+  background-color: #F1F0F0;
+  padding-top: 6vh;
+  margin: 0 15vw 6vh 15vw;
+}
+.portfolio h4 {
+  font-family: alegreya;
+  font-size: 3rem;
+  color: #3A4F52;
+  margin-bottom: 1.5vh;
+}
+.portfolio p {
+  font-family: poppins;
+  font-size: 1.6rem;
+  color: #6A6A6A;
+  margin-bottom: 6vh;
+}
+.portfolio .p-head div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio .p-head .btns {
+  font-family: poppins;
+  font-size: 1rem;
+  color: #3A4F52;
+  border: 1.5px solid #3A4F52;
+  background-color: transparent;
+  cursor: pointer;
+  height: 50%;
+  padding: 0.5vh 1vw;
+}
+.portfolio .p-head .btns:hover {
+  color: #F1F0F0;
+  background-color: #3A4F52;
+}
+.portfolio .galery {
+  display: grid;
+  grid-template-areas: "one two three" "four five six";
+  gap: 4vh 1vw;
+  margin-bottom: 9vh;
+}
+.portfolio .galery .img1 {
+  grid-area: one;
+}
+.portfolio .galery .img2 {
+  grid-area: two;
+}
+.portfolio .galery .img3 {
+  grid-area: three;
+}
+.portfolio .galery .img4 {
+  grid-area: four;
+}
+.portfolio .galery .img5 {
+  grid-area: five;
+}
+.portfolio .galery .img6 {
+  grid-area: six;
+}
+.portfolio .galery img {
+  transition: 0.2s;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+.portfolio .galery img:hover {
+  transform: scale(1.1);
+  opacity: 70%;
+}
+
+.services {
+  background-image: url("../img/sec2_main.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+.services .trans {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: alegreya;
+  color: #ffffff;
+  padding: 4vh 4vw;
+  margin: 0 15vw 6vh 15vw;
+}
+.services .trans .s-head {
+  text-align: center;
+}
+.services .trans .s-head h4 {
+  font-family: alegreya;
+  font-size: 3.2rem;
+  margin-bottom: 1vh;
+  padding-top: 4vh;
+}
+.services .trans .service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.services .trans .service .s-1, .services .trans .service .s-2, .services .trans .service .s-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  text-align: center;
+}
+.services .trans .service .s-1 h5, .services .trans .service .s-2 h5, .services .trans .service .s-3 h5 {
+  font-family: alegreya;
+  font-size: 2.6rem;
+}
+.services .trans .service img {
+  max-height: 6vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+p {
+  font-family: poppins;
+  font-size: 1.2rem;
+  margin-bottom: 7vh;
+}
+
+.blog {
+  background-color: #F1F0F0;
+  padding-top: 6vh;
+  margin: 0 15vw 6vh 15vw;
+}
+.blog h4 {
+  font-family: alegreya;
+  font-size: 3rem;
+  color: #3A4F52;
+  margin-bottom: 1.5vh;
+}
+.blog p {
+  font-family: poppins;
+  font-size: 1.6rem;
+  color: #6A6A6A;
+  margin-bottom: 6vh;
+}
+.blog .b-head {
+  display: flex;
+  flex-direction: column;
+}
+.blog .b-head .b-head-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog .b-head .b-head-1 .btns {
+  font-family: poppins;
+  font-size: 1rem;
+  color: #3A4F52;
+  border: 1.5px solid #3A4F52;
+  background-color: transparent;
+  cursor: pointer;
+  height: 50%;
+  padding: 0.5vh 1vw;
+}
+.blog .b-head .b-head-1 .btns:hover {
+  color: #F1F0F0;
+  background-color: #3A4F52;
+}
+.blog .b-container {
+  display: flex;
+  gap: 2vw;
+}
+
+.para {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: alegreya;
+  color: #ffffff;
+  padding: 4vh 4vw;
+  background-image: url("../img/sec4.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.para article {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 15vw 6vh 15vw;
+  padding: 12vh;
+}
+.para article h5 {
+  font-family: alegreya;
+  font-size: 2rem;
+}
+.para article a {
+  font-family: poppins;
+  font-size: 1rem;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  height: 50%;
+  padding: 0.5vh 1vw;
+}
+.para article a:hover {
+  color: #2B3E51;
+  background-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
